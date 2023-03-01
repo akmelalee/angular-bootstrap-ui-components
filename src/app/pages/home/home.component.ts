@@ -12,7 +12,7 @@ export class HomeComponent {
   title = 'Angular Bootstrap UI Components';
   Components: uiComponent[] = [
     {title: 'Accordion', path: '/accordion' },
-    {title: 'Alerts', path: '' },
+    {title: 'Alerts', path: '/alert' },
     {title: 'Badge', path: '' },
     {title: 'Breadcrumb', path: '' },
     {title: 'Buttons', path: '' },

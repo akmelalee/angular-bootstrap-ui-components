@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccordionComponent } from './pages/accordion/accordion.component';
+import { AlertComponent } from './pages/alert/alert.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
@@ -11,6 +12,9 @@ const routes: Routes = [
   },
   {
     path: 'accordion', component: AccordionComponent
+  },
+  {
+    path: 'alert', component: AlertComponent
   },
   {
     path: '**', component: NotFoundComponent

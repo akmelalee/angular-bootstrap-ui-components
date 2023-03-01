@@ -1,0 +1,60 @@
+<div class="container">
+    <h2 class="text-center"> Alerts</h2>
+    <!-- ==================== Simple ================ -->
+    <h4>Simple</h4>
+    <div class="row">
+        <div class="col-6" *ngFor="let alert of AlertsData">
+            <div class="alert" role="alert" [ngClass]="alert.type">
+                A simple {{alert.title}} alert—check it out!
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== Link color ================ -->
+
+    <h4>Link color</h4>
+    <div class="row">
+        <div class="col-6" *ngFor="let alert of AlertsData">
+            <div class="alert" role="alert" [ngClass]="alert.type">
+                A simple {{alert.title}} alert with <a href="#" class="alert-link">an example link</a>. Give it a click
+                if you like.
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Additional content ================ -->
+    <h4>Additional content</h4>
+
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+            so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+    <!-- ==================== Icons Alert ================ -->
+    <h4>Icons</h4>
+    <div class="row">
+        <div class="col-6" *ngFor="let alert of AlertsData">
+            <div [ngClass]="alert.type" class="alert  d-flex align-items-center" role="alert">
+                <i [ngClass]="alert.icon" class="bi"></i>
+                <div class="ms-2">
+                    An example {{alert.title}} alert with an icon
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================== Dismissing ================ -->
+    <h4>Dismissing</h4>
+    <div class="row">
+        <div class="col-6" *ngFor="let alert of AlertsData">
+            <div [ngClass]="alert.type" class="alert alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
