@@ -7,6 +7,7 @@ import { AccordionComponent } from './pages/accordion/accordion.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AlertComponent } from './pages/alert/alert.component';
+import { BadgeComponent } from './pages/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AlertComponent } from './pages/alert/alert.component';
     AccordionComponent,
     NotFoundComponent,
     AlertComponent,
+    BadgeComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@ export class HomeComponent {
   Components: uiComponent[] = [
     {title: 'Accordion', path: '/accordion' },
     {title: 'Alerts', path: '/alert' },
-    {title: 'Badge', path: '' },
+    {title: 'Badge', path: '/badge' },
     {title: 'Breadcrumb', path: '' },
     {title: 'Buttons', path: '' },
     {title: 'Button group', path: '' },
